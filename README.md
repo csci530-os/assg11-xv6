@@ -1,5 +1,5 @@
 ---
-title: 'Assignment 11: Memory Maped Files (mmap)'
+title: 'Assignment 11: Memory Mapped Files (mmap)'
 author: 'CSci 530: Operating Systems'
 ---
 
@@ -220,7 +220,7 @@ classroom are the same ones that you can run locally by using `make grade` or
   need to pin `mmap`-ed blocks into the buffer cache. You will need to
   worry about reference counts. One benefit of fixing this
   double-caching is that it also helps make `read()` and `write()`
-  consistent with `mmap`. That is, if some mmaped file data is modified
+  consistent with `mmap`. That is, if some `mmap`-ed file data is modified
   through the memory mapping, `read` should return those modifications,
   and likewise, if an application calls `write`, the `write` should appear
   in any active memory mappings of that file. You might find it
